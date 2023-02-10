@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+div.image{
+    display:inline-block;
+    height:300px;
+    width:24%;
+}
+div.text{
+    display: inline-block;
+    text-align: center
+}
+
+li, a, button header{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+}
+div.relative {
+    padding-left: 10%;
+    height:78%;
+}
+div.relativerecipe {padding-left:10%; margin-bottom:auto;}
+
+div.relativeM {padding-left:10%;}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 28px 10%;
+}
+
+header .mobile { display:none;}
+
+hr{
+    background-color: black;
+    padding-left:10%;
+    width:84%;
+    align-items: center;
+}
+
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color:black;
+    padding: 112px 10px;
+    padding-bottom: 9px;
+    text-decoration: none;
+}
+
+div.relativeM h2 {padding-top:3%;}
+h3{
+    display: inline-flex;
+    align-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color:black;
+    padding-top:1%;
+    padding-bottom: 9px;
+    text-decoration: none;
+}
+
+div p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color:black;
+
+    float:left;
+    width:fit-content
+
+}
+
+ul li{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color:black;
+  text-decoration: none;
+  float:left;
+  display:colum;
+}
+.logo{
+    margin-right: auto;
+    cursor:pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links .desktop {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a
+{
+    color:black;
+    transition: all 0.3s ease 0s;
+}
+@media screen and (max-width:750px) {
+  header .nav_links .desktop { display: none;}
+  header .nav_links .mobile{
+    display: inline-block;
+  }
+  li a, button header  {font-size: 11px;
+  display:flex;
+margin-left:8.5px;}
+}
+
+@media screen and (max-width:341px) {
+  .nav_links li a {
+    font-size: xx-small;
+  }
+}
+@media screen and (min-width:751px) {
+  header.nav_links .mobile {display:none;}
+}
+  
+.nav_links li a:hover{
+    color: #0088a9;
+}
+.header_links
+{
+  list-style:none;
+}
+.header_links h3{
+  font-style: none;
+}
+
+.contactinfo p{
+
+   text-align: center;
+}
+
+.contactinfo p a:hover{
+  transition:all 0.3s ease 0s;
+  color:#0088a9;
+}
+.contactinfo p a:hover{
+
+  color:#0088a9;
+}
+
+
+.header_links h3:hover{
+  transition:all 0.3s ease 0s;
+  color:#0088a9;
+}
+.header_links h3 a:hover{
+  color:#0088a9;
+}
+
+
+button{
+    margin-left:20px;
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.daily{
+    background: white;
+    color:black;
+    padding-top:1%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.daily dcontent{
+    text-align:right;
+    margin: 1% 1.2%;
+    margin-left:0;
+}
+
+.daily dcontent img{
+  width:100%;
+  height:94%;
+    margin-bottom: 0%;
+}
+
+.monthly {display:flex; position:relative; flex-direction:row; width:84%;}
+mcontent{height:25%; width:90%; margin:1% 1.2%; margin-left:0%;}
+.monthly montent {text-align:right; margin:1% 1.2%; margin-left:0%;}
+.monthly mcontent img { height:94%; width:100%;}
+.features {
+    background: white;
+    color:black;
+    padding-top:1%;
+    padding-bottom:3%;
+    display: flex;
+    position: relative;
+    padding-left: 8.6%;
+    flex-direction: row;
+  }
+  
+  .features figure {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1% 2.3%;
+    width:12.2%;
+    height:11%;
+  }
+  
+
+  .features figure img {
+    box-shadow: gray 0 0 2px;
+    width: 170px; 
+    height: 170px; 
+    overflow: hidden;
+  }
+  
+  .recipes
+  {
+    background: white;
+    color:black;
+    padding-top:1%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .recipes figure
+  {
+    margin: 1% 2.6%;
+  }
+
+  .recipes figure img{
+    width: 30%;
+    height:30%;
+    padding: 1%;
+
+  }
+
+  .wrapingimage
+  {
+    height:63%;
+    width:35%;
+    float:left;
+    margin:1% 1% 1% 0%;
+    padding-bottom: 0.3%;
+
+  }
+
+  .wrapingimage img{
+    width:90.5%;
+    height:100%;
+  }
+  
+  
+  footer {
+    background: black;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    margin-top:5%;
+    width:100%;
+    text-decoration: none;
+  }
+  
+  body{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  #pop_up{
+  perspective: 250px;
+  }
+
+  p.instructions{
+     width:60%; padding-top:2%;padding-bottom: 3%; margin-left:10%; font-family: 'Open Sans', sans-serif;
+     font-weight: 500;
+  }
+
+  table{
+    padding-left:0%;
+  }
+  table tr{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color:black;
+  }
+  table td{ 
+    padding:0%;
+
+  }
+  table tr td{
+    width:30%;
+    padding-left:0.2%;
+  }
+  
+  #pop_up img {
+    transition: 300ms;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  }
+  
+  #pop_up img:hover {
+    transform: translate3d(10px,0px,20px);  
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    }
+
+    #pop_up img:hover .text {
+        opacity: 1;
+        transform: translateY(250px);
+        -webkit-transform: translateY(250px);
+      }
+
+button:hover{
+    background-color: rgba(0,136,169,0.8S);
+}
+
+@media screen and (max-width: 1000px) {
+.daily {flex-wrap: wrap;
+  margin-right:17%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.daily content 
+/*{width:20%; height:20%;}
+/*.daily content a img {width:220px; height:160px;}*/
+p {font-size:xx-small;}
+h2 {padding-top: 20px;}
+.monthly {flex-wrap:wrap; margin-bottom:4%;}
+mcontent {margin:2% 10%; width:80%;}
+}
+
+p.about { 
+  font-size:18px;
+  width:83%;
+}
+p.contactinfo {margin-left:0%;
+  width:80%; 
+  padding-top:2%;
+  padding-bottom: 15%; text-align: center; font-size:22px;}
+p.contactinfo img { width:1%;}
+
+table.recipestable { width:100%; text-decoration: underline;}
+
+@media screen and (max-width: 890px) {
+  .logo{ width:27%; height:90%; }
+  header { padding : 2%;}
+  .features figure img {width:80px; height:70px;}
+  .features figure figcaption { display:inline-table;}
+  .features {display:flex; align-items:baseline; flex-wrap:nowrap; flex-direction: column;
+  justify-content: space-evenly; margin-bottom:4%;} 
+  .features figure figcaption a {margin-left:4px; font-size:13px; float:right; width:135px;}
+  h3{font-size:17px;}
+  p.about {font-size:14px;}
+  p.contactinfo img  { width: 4.2%; }
+  p.contactinfo {font-size: 20px; width:84%;}
+  table.recipestable { width:84%; font-size:14px;}
+  table.recipestable td { width:0%;}
+  table.recipestable a {font-size:11px;}
+}
+.dailyp{
+  font-size:18px;
+}
+
+@media screen and (min-width:891px)
+{
+
+  .daily p {margin-right:31%; font-size:15px;}
+}
+
+table {float:left; width:45%;}
+.align p {font-size: 18px;}
+
+@media screen and (max-width: 700px) {
+
+  .wrapingimage {
+    width: 91%;
+    height:auto;
+    margin: 3% 0.5% 3%;
+  }
+  div.relative {
+    height:100%;
+    margin-bottom:4%;
+  }
+  .dailyp { font-size:14px;}
+  table { width:91%;
+  font-size:10px;
+margin-bottom:4%;}
+.features figure {height:auto; width:auto;}
+.align p {font-size:14px;}
+p.instructions {width:70%; font-size:14px; margin-bottom:2%; margin-top:3%; font-family: 'Open Sans', sans-serif;
+  font-weight: 500;}
+}
+
+@media screen and (max-width:500px) {
+  h2 {font-size:22px; width:87%;}
+  div p {font-size:14px;}
+  h3 {font-size:16px;}
+}
+
